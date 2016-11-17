@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,//清单文件格式的版本,在Chrome18之后,应该都是2 *
+  "name": "study",//插件名字 *
+  "version": "1.0",//插件版本 *
+   "description":"学习chorme插件开发",//插件功能描述
+  "icons": {
+      "48": "assets/img/icon.png"//拓展程序列表中的图表
+   },
+    "browser_action": {//插件标识
+      "default_icon": "assets/img/icon.png",//右上角拓展栏显示的插件图标 *
+      "default_title": "My Study Programs",
+    "default_popup": "index.html"
+    },
+    "background": {
+        "page": "index.html"
+    }
+//     "content_scripts":[{//在浏览器运行时，需要加入的js或css
+//     "js": [ "js/helloworld.js" ],//运行插件需要哪些js文件 *
+//     "matches": [ "<all_urls>" ]//哪些http协议支持该插件
+// }]
+}
